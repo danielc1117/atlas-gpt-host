@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: Atlas Trade Checker
+  version: 1.0.0
+paths:
+  /check:
+    post:
+      operationId: checkTicker
+      summary: Run a trading analysis for a specific ticker
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ticker:
+                  type: string
+                  description: "The ticker to check (e.g., BABA, SPY)"
+      responses:
+        '200':
+          description: Result from the trading system
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+servers:
+  - url: "https://hooks.zapier.com/hooks/catch/21868572/20e54t1/"

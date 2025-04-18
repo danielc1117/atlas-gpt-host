@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Atlas Trade Checker",
+  "name_for_model": "atlas_trade_checker",
+  "description_for_human": "Trigger a Zap to analyze options setups for any ticker.",
+  "description_for_model": "Use this tool to send a ticker symbol to the user's trading system via Zapier webhook.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://danielc1117.github.io/atlas-gpt-host/openapi.yaml"
+  },
+  "logo_url": "https://danielc1117.github.io/atlas-gpt-host/logo.png",
+  "contact_email": "you@example.com",
+  "legal_info_url": "https://danielc1117.github.io/atlas-gpt-host/legal.html"
+}
